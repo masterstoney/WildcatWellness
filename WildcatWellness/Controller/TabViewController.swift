@@ -21,13 +21,24 @@ class TabViewController: UITabBarController {
     //MARK: Properties
     
     private let dashboardViewController = DashboardViewController()
+    private let physicalViewController = CategoryViewController()
+    private let socialViewController = CategoryViewController()
+    private let mentalViewController = CategoryViewController()
+    private let categoryManager = CategoryDataManager()
     
     //MARK: Methods
     
     private func setupView() {
         
+        physicalViewController.dataSource = CategoryDataSource(data: categoryManager.getPhysicalData())
+        socialViewController.dataSource = CategoryDataSource(data: categoryManager.getSocialData())
+        mentalViewController.dataSource = CategoryDataSource(data: categoryManager.getMentalData())
+        
         self.viewControllers = [
-        setupViewController(vc: dashboardViewController, title: "Dashboard", icon: UIImage(systemName: "slider.horizontal.3")!)]
+        setupViewController(vc: dashboardViewController, title: "Dashboard", icon: UIImage(systemName: "slider.horizontal.3")!),
+        setupViewController(vc: physicalViewController, title: "Physical", icon: UIImage(systemName: "slider.horizontal.3")!),
+        setupViewController(vc: socialViewController, title: "Social", icon: UIImage(systemName: "slider.horizontal.3")!),
+        setupViewController(vc: mentalViewController, title: "Mental", icon: UIImage(systemName: "slider.horizontal.3")!)]
         
     }
     
