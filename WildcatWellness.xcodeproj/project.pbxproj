@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EF9F240A0DE400DC9F5D /* AppDelegate.swift */; };
+		D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA1240A0DE400DC9F5D /* SceneDelegate.swift */; };
+		D281EFA4240A0DE400DC9F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA3240A0DE400DC9F5D /* ViewController.swift */; };
+		D281EFA7240A0DE400DC9F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D281EFA5240A0DE400DC9F5D /* Main.storyboard */; };
+		D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA8240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld */; };
+		D281EFAC240A0DE600DC9F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D281EFAB240A0DE600DC9F5D /* Assets.xcassets */; };
+		D281EFAF240A0DE600DC9F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D281EFAD240A0DE600DC9F5D /* LaunchScreen.storyboard */; };
+		D281EFBA240A0DE600DC9F5D /* WildcatWellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFB9240A0DE600DC9F5D /* WildcatWellnessTests.swift */; };
+		D281EFC5240A0DE600DC9F5D /* WildcatWellnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D281EFB6240A0DE600DC9F5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D281EF94240A0DE400DC9F5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D281EF9B240A0DE400DC9F5D;
+			remoteInfo = WildcatWellness;
+		};
+		D281EFC1240A0DE600DC9F5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D281EF94240A0DE400DC9F5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D281EF9B240A0DE400DC9F5D;
+			remoteInfo = WildcatWellness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D281EF9C240A0DE400DC9F5D /* WildcatWellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildcatWellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D281EF9F240A0DE400DC9F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D281EFA1240A0DE400DC9F5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D281EFA3240A0DE400DC9F5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D281EFA6240A0DE400DC9F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D281EFA9240A0DE400DC9F5D /* WildcatWellness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WildcatWellness.xcdatamodel; sourceTree = "<group>"; };
+		D281EFAB240A0DE600DC9F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D281EFAE240A0DE600DC9F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D281EFB0240A0DE600DC9F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D281EFB5240A0DE600DC9F5D /* WildcatWellnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildcatWellnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D281EFB9240A0DE600DC9F5D /* WildcatWellnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildcatWellnessTests.swift; sourceTree = "<group>"; };
+		D281EFBB240A0DE600DC9F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D281EFC0240A0DE600DC9F5D /* WildcatWellnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildcatWellnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildcatWellnessUITests.swift; sourceTree = "<group>"; };
+		D281EFC6240A0DE600DC9F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D281EF99240A0DE400DC9F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D281EFB2240A0DE600DC9F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D281EFBD240A0DE600DC9F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D281EF93240A0DE400DC9F5D = {
+			isa = PBXGroup;
+			children = (
+				D281EF9E240A0DE400DC9F5D /* WildcatWellness */,
+				D281EFB8240A0DE600DC9F5D /* WildcatWellnessTests */,
+				D281EFC3240A0DE600DC9F5D /* WildcatWellnessUITests */,
+				D281EF9D240A0DE400DC9F5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D281EF9D240A0DE400DC9F5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D281EF9C240A0DE400DC9F5D /* WildcatWellness.app */,
+				D281EFB5240A0DE600DC9F5D /* WildcatWellnessTests.xctest */,
+				D281EFC0240A0DE600DC9F5D /* WildcatWellnessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D281EF9E240A0DE400DC9F5D /* WildcatWellness */ = {
+			isa = PBXGroup;
+			children = (
+				D281EF9F240A0DE400DC9F5D /* AppDelegate.swift */,
+				D281EFA1240A0DE400DC9F5D /* SceneDelegate.swift */,
+				D281EFA3240A0DE400DC9F5D /* ViewController.swift */,
+				D281EFA5240A0DE400DC9F5D /* Main.storyboard */,
+				D281EFAB240A0DE600DC9F5D /* Assets.xcassets */,
+				D281EFAD240A0DE600DC9F5D /* LaunchScreen.storyboard */,
+				D281EFB0240A0DE600DC9F5D /* Info.plist */,
+				D281EFA8240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld */,
+			);
+			path = WildcatWellness;
+			sourceTree = "<group>";
+		};
+		D281EFB8240A0DE600DC9F5D /* WildcatWellnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				D281EFB9240A0DE600DC9F5D /* WildcatWellnessTests.swift */,
+				D281EFBB240A0DE600DC9F5D /* Info.plist */,
+			);
+			path = WildcatWellnessTests;
+			sourceTree = "<group>";
+		};
+		D281EFC3240A0DE600DC9F5D /* WildcatWellnessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */,
+				D281EFC6240A0DE600DC9F5D /* Info.plist */,
+			);
+			path = WildcatWellnessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D281EF9B240A0DE400DC9F5D /* WildcatWellness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D281EFC9240A0DE600DC9F5D /* Build configuration list for PBXNativeTarget "WildcatWellness" */;
+			buildPhases = (
+				D281EF98240A0DE400DC9F5D /* Sources */,
+				D281EF99240A0DE400DC9F5D /* Frameworks */,
+				D281EF9A240A0DE400DC9F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WildcatWellness;
+			productName = WildcatWellness;
+			productReference = D281EF9C240A0DE400DC9F5D /* WildcatWellness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D281EFB4240A0DE600DC9F5D /* WildcatWellnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D281EFCC240A0DE600DC9F5D /* Build configuration list for PBXNativeTarget "WildcatWellnessTests" */;
+			buildPhases = (
+				D281EFB1240A0DE600DC9F5D /* Sources */,
+				D281EFB2240A0DE600DC9F5D /* Frameworks */,
+				D281EFB3240A0DE600DC9F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D281EFB7240A0DE600DC9F5D /* PBXTargetDependency */,
+			);
+			name = WildcatWellnessTests;
+			productName = WildcatWellnessTests;
+			productReference = D281EFB5240A0DE600DC9F5D /* WildcatWellnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D281EFBF240A0DE600DC9F5D /* WildcatWellnessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D281EFCF240A0DE600DC9F5D /* Build configuration list for PBXNativeTarget "WildcatWellnessUITests" */;
+			buildPhases = (
+				D281EFBC240A0DE600DC9F5D /* Sources */,
+				D281EFBD240A0DE600DC9F5D /* Frameworks */,
+				D281EFBE240A0DE600DC9F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D281EFC2240A0DE600DC9F5D /* PBXTargetDependency */,
+			);
+			name = WildcatWellnessUITests;
+			productName = WildcatWellnessUITests;
+			productReference = D281EFC0240A0DE600DC9F5D /* WildcatWellnessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D281EF94240A0DE400DC9F5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Tendaishe Gwini";
+				TargetAttributes = {
+					D281EF9B240A0DE400DC9F5D = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					D281EFB4240A0DE600DC9F5D = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D281EF9B240A0DE400DC9F5D;
+					};
+					D281EFBF240A0DE600DC9F5D = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D281EF9B240A0DE400DC9F5D;
+					};
+				};
+			};
+			buildConfigurationList = D281EF97240A0DE400DC9F5D /* Build configuration list for PBXProject "WildcatWellness" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D281EF93240A0DE400DC9F5D;
+			productRefGroup = D281EF9D240A0DE400DC9F5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D281EF9B240A0DE400DC9F5D /* WildcatWellness */,
+				D281EFB4240A0DE600DC9F5D /* WildcatWellnessTests */,
+				D281EFBF240A0DE600DC9F5D /* WildcatWellnessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D281EF9A240A0DE400DC9F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D281EFAF240A0DE600DC9F5D /* LaunchScreen.storyboard in Resources */,
+				D281EFAC240A0DE600DC9F5D /* Assets.xcassets in Resources */,
+				D281EFA7240A0DE400DC9F5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D281EFB3240A0DE600DC9F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D281EFBE240A0DE600DC9F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D281EF98240A0DE400DC9F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D281EFA4240A0DE400DC9F5D /* ViewController.swift in Sources */,
+				D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */,
+				D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */,
+				D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D281EFB1240A0DE600DC9F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D281EFBA240A0DE600DC9F5D /* WildcatWellnessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D281EFBC240A0DE600DC9F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D281EFC5240A0DE600DC9F5D /* WildcatWellnessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D281EFB7240A0DE600DC9F5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D281EF9B240A0DE400DC9F5D /* WildcatWellness */;
+			targetProxy = D281EFB6240A0DE600DC9F5D /* PBXContainerItemProxy */;
+		};
+		D281EFC2240A0DE600DC9F5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D281EF9B240A0DE400DC9F5D /* WildcatWellness */;
+			targetProxy = D281EFC1240A0DE600DC9F5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D281EFA5240A0DE400DC9F5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D281EFA6240A0DE400DC9F5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D281EFAD240A0DE600DC9F5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D281EFAE240A0DE600DC9F5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D281EFC7240A0DE600DC9F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D281EFC8240A0DE600DC9F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D281EFCA240A0DE600DC9F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CGXTTVKR2;
+				INFOPLIST_FILE = WildcatWellness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tentech.WildcatWellness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D281EFCB240A0DE600DC9F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CGXTTVKR2;
+				INFOPLIST_FILE = WildcatWellness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tentech.WildcatWellness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D281EFCD240A0DE600DC9F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CGXTTVKR2;
+				INFOPLIST_FILE = WildcatWellnessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tentech.WildcatWellnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WildcatWellness.app/WildcatWellness";
+			};
+			name = Debug;
+		};
+		D281EFCE240A0DE600DC9F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CGXTTVKR2;
+				INFOPLIST_FILE = WildcatWellnessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tentech.WildcatWellnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WildcatWellness.app/WildcatWellness";
+			};
+			name = Release;
+		};
+		D281EFD0240A0DE600DC9F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CGXTTVKR2;
+				INFOPLIST_FILE = WildcatWellnessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tentech.WildcatWellnessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WildcatWellness;
+			};
+			name = Debug;
+		};
+		D281EFD1240A0DE600DC9F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CGXTTVKR2;
+				INFOPLIST_FILE = WildcatWellnessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tentech.WildcatWellnessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WildcatWellness;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D281EF97240A0DE400DC9F5D /* Build configuration list for PBXProject "WildcatWellness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D281EFC7240A0DE600DC9F5D /* Debug */,
+				D281EFC8240A0DE600DC9F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D281EFC9240A0DE600DC9F5D /* Build configuration list for PBXNativeTarget "WildcatWellness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D281EFCA240A0DE600DC9F5D /* Debug */,
+				D281EFCB240A0DE600DC9F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D281EFCC240A0DE600DC9F5D /* Build configuration list for PBXNativeTarget "WildcatWellnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D281EFCD240A0DE600DC9F5D /* Debug */,
+				D281EFCE240A0DE600DC9F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D281EFCF240A0DE600DC9F5D /* Build configuration list for PBXNativeTarget "WildcatWellnessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D281EFD0240A0DE600DC9F5D /* Debug */,
+				D281EFD1240A0DE600DC9F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D281EFA8240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D281EFA9240A0DE400DC9F5D /* WildcatWellness.xcdatamodel */,
+			);
+			currentVersion = D281EFA9240A0DE400DC9F5D /* WildcatWellness.xcdatamodel */;
+			path = WildcatWellness.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D281EF94240A0DE400DC9F5D /* Project object */;
+}
