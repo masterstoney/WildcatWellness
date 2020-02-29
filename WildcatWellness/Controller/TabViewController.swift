@@ -34,7 +34,8 @@ class TabViewController: UITabBarController {
     private func setupViewController(vc: UIViewController, title: String, icon: UIImage) -> UIViewController {
         
         let navController = UINavigationController(rootViewController: vc)
-        navController.navigationBar.isHidden = true
+        vc.navigationItem.title = title
+        navController.navigationBar.prefersLargeTitles = true
         navController.tabBarItem.title = title
         navController.tabBarItem.image = icon
         return navController

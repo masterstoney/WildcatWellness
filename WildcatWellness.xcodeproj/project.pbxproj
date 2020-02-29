@@ -19,6 +19,7 @@
 		D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */; };
 		D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD7240A194100DC9F5D /* DashboardView.swift */; };
 		D281EFDA240A19CC00DC9F5D /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD9240A19CC00DC9F5D /* BarView.swift */; };
+		D281EFDC240AAB2000DC9F5D /* BarSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		D281EFD7240A194100DC9F5D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		D281EFD9240A19CC00DC9F5D /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D281EFD7240A194100DC9F5D /* DashboardView.swift */,
+				D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */,
 				D281EFD9240A19CC00DC9F5D /* BarView.swift */,
 			);
 			path = View;
@@ -300,6 +303,7 @@
 				D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */,
 				D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */,
 				D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */,
+				D281EFDC240AAB2000DC9F5D /* BarSummaryView.swift in Sources */,
 				D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */,
 				D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */,
 			);

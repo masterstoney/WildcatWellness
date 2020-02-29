@@ -32,9 +32,6 @@ class BarView: UIView {
         super.layoutSubviews()
         
         backgroundLayer.frame = self.bounds
-        //   backgroundLayer.anchorPoint = CGPoint(x: 0, y: 0)
-        
-        print(progressLayer.bounds.width)
         
     }
     
@@ -42,13 +39,14 @@ class BarView: UIView {
     
     private var backgroundLayer: CALayer = {
         let layer = CALayer()
-       // layer.lineCap = .round
+        
         return layer
     }()
     
     private var progressLayer: CALayer = {
         let layer = CALayer()
-       // layer.lineCap = .round
+        layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner]
+        layer.cornerRadius = 10.0
         return layer
     }()
     
@@ -57,29 +55,23 @@ class BarView: UIView {
     private func setupView() {
         
         self.layer.addSublayer(backgroundLayer)
-        
-//        progressLayer.frame = CGRect(origin: bounds.origin, size: CGSize(width: 0.0, height: bounds.height))
         progressLayer.anchorPoint = CGPoint(x: 0, y: 0.0)
         self.layer.addSublayer(progressLayer)
         
-        
-        
     }
     
-    
+    /**Value between 0 and 1 to mark the progress in the task*/
     func configureProgress(progress: CGFloat) {
         
-        print("Something is being called here")
         let oldWidth = progressLayer.bounds.width
+        let newWidth = progress * bounds.width
         let progressAnimation = CABasicAnimation(keyPath: "bounds.size.width")
         progressAnimation.duration = 3.0
         progressAnimation.fromValue = oldWidth
-        progressAnimation.toValue = oldWidth + progress
-        progressLayer.bounds = CGRect(origin: bounds.origin, size: CGSize(width: progress, height: bounds.height))
+        progressAnimation.toValue = newWidth
+        progressLayer.bounds = CGRect(origin: bounds.origin, size: CGSize(width: newWidth, height: bounds.height))
         progressLayer.add(progressAnimation, forKey: "anim")
      
-        
-        print(progressLayer.bounds.width)
     }
     
     
