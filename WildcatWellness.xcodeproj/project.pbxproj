@@ -29,6 +29,9 @@
 		D281EFEA240AC7EC00DC9F5D /* CategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFE9240AC7EC00DC9F5D /* CategoryDataSource.swift */; };
 		D281EFEC240AC87A00DC9F5D /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFEB240AC87A00DC9F5D /* CategoryModel.swift */; };
 		D281EFEE240ACA1600DC9F5D /* CategoryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFED240ACA1600DC9F5D /* CategoryDataManager.swift */; };
+		D281EFF0240B06DE00DC9F5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFEF240B06DE00DC9F5D /* DetailViewController.swift */; };
+		D281EFF2240B097B00DC9F5D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFF1240B097B00DC9F5D /* DetailView.swift */; };
+		D281EFF4240B0BDA00DC9F5D /* WellnessStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFF3240B0BDA00DC9F5D /* WellnessStatisticView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		D281EFE9240AC7EC00DC9F5D /* CategoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataSource.swift; sourceTree = "<group>"; };
 		D281EFEB240AC87A00DC9F5D /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		D281EFED240ACA1600DC9F5D /* CategoryDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataManager.swift; sourceTree = "<group>"; };
+		D281EFEF240B06DE00DC9F5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D281EFF1240B097B00DC9F5D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D281EFF3240B0BDA00DC9F5D /* WellnessStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessStatisticView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D281EFA3240A0DE400DC9F5D /* TabViewController.swift */,
+				D281EFEF240B06DE00DC9F5D /* DetailViewController.swift */,
 				D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */,
 				D281EFE3240AC10A00DC9F5D /* CategoryViewController.swift */,
 			);
@@ -174,6 +181,8 @@
 			children = (
 				D281EFD7240A194100DC9F5D /* DashboardView.swift */,
 				D281EFE5240AC1A000DC9F5D /* CategoryView.swift */,
+				D281EFF1240B097B00DC9F5D /* DetailView.swift */,
+				D281EFF3240B0BDA00DC9F5D /* WellnessStatisticView.swift */,
 				D281EFE7240AC40900DC9F5D /* CategoryCollectionViewCell.swift */,
 				D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */,
 				D281EFD9240A19CC00DC9F5D /* BarView.swift */,
@@ -331,15 +340,18 @@
 				D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */,
 				D281EFE4240AC10A00DC9F5D /* CategoryViewController.swift in Sources */,
 				D281EFEE240ACA1600DC9F5D /* CategoryDataManager.swift in Sources */,
+				D281EFF4240B0BDA00DC9F5D /* WellnessStatisticView.swift in Sources */,
 				D281EFE6240AC1A000DC9F5D /* CategoryView.swift in Sources */,
 				D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */,
 				D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */,
+				D281EFF0240B06DE00DC9F5D /* DetailViewController.swift in Sources */,
 				D281EFEA240AC7EC00DC9F5D /* CategoryDataSource.swift in Sources */,
 				D281EFDC240AAB2000DC9F5D /* BarSummaryView.swift in Sources */,
 				D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */,
 				D281EFDE240AB00300DC9F5D /* WellnessRecord.swift in Sources */,
 				D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */,
 				D281EFEC240AC87A00DC9F5D /* CategoryModel.swift in Sources */,
+				D281EFF2240B097B00DC9F5D /* DetailView.swift in Sources */,
 				D281EFE8240AC40900DC9F5D /* CategoryCollectionViewCell.swift in Sources */,
 				D281EFE0240AB1B300DC9F5D /* WellnessViewModel.swift in Sources */,
 			);

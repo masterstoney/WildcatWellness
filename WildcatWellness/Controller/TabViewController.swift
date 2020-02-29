@@ -35,10 +35,10 @@ class TabViewController: UITabBarController {
         mentalViewController.dataSource = CategoryDataSource(data: categoryManager.getMentalData())
         
         self.viewControllers = [
-        setupViewController(vc: dashboardViewController, title: "Dashboard", icon: UIImage(systemName: "slider.horizontal.3")!),
-        setupViewController(vc: physicalViewController, title: "Physical", icon: UIImage(systemName: "slider.horizontal.3")!),
-        setupViewController(vc: socialViewController, title: "Social", icon: UIImage(systemName: "slider.horizontal.3")!),
-        setupViewController(vc: mentalViewController, title: "Mental", icon: UIImage(systemName: "slider.horizontal.3")!)]
+        setupViewController(vc: dashboardViewController, title: "Dashboard", icon: UIImage(systemName: "waveform.path.ecg")!),
+        setupViewController(vc: physicalViewController, title: "Physical", icon: UIImage(systemName: "heart")!),
+        setupViewController(vc: socialViewController, title: "Social", icon: UIImage(systemName: "person.3")!),
+        setupViewController(vc: mentalViewController, title: "Mental", icon: #imageLiteral(resourceName: "idea"))]
         
     }
     

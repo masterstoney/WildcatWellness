@@ -13,7 +13,7 @@ class CategoryDataManager {
     //MARK: Properties
     
     private var physical: [CategoryModel] = [
-        CategoryModel(title: "Steps", description: "Number of steps taken", artwork: UIImage(systemName: "flame")!, leadingGradientColor: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), trailingGradientColor: #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)),
+        CategoryModel(title: "Steps", description: "Number of steps taken", artwork: UIImage(systemName: "flame")!, leadingGradientColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), trailingGradientColor: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)),
         CategoryModel(title: "Water", description: "Amount of water consumed", artwork: UIImage(systemName: "flame")!, leadingGradientColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), trailingGradientColor: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
     ]
     

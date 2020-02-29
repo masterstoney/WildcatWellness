@@ -61,6 +61,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         gradientLayer.frame = self.bounds
         layer.addSublayer(gradientLayer)
         
+        
         addSubview(titleLabel)
         addSubview(descriptionLabel)
         addSubview(artworkImageView)

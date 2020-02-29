@@ -36,5 +36,8 @@ class DashboardViewController: UIViewController {
     
     //MARK: Methods
 
-
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        let presentedController = DetailViewController()
+        navigationController?.pushViewController(presentedController, animated: true)
+    }
 }
