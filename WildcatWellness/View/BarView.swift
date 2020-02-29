@@ -47,6 +47,9 @@ class BarView: UIView {
         let layer = CALayer()
         layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner]
         layer.cornerRadius = 10.0
+        layer.shadowColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        layer.shadowRadius = 5.0
+        layer.shadowOpacity = 0.8
         return layer
     }()
     
@@ -54,6 +57,8 @@ class BarView: UIView {
     
     private func setupView() {
         
+        
+        self.layer.masksToBounds = true
         self.layer.addSublayer(backgroundLayer)
         progressLayer.anchorPoint = CGPoint(x: 0, y: 0.0)
         self.layer.addSublayer(progressLayer)
@@ -61,17 +66,23 @@ class BarView: UIView {
     }
     
     /**Value between 0 and 1 to mark the progress in the task*/
-    func configureProgress(progress: CGFloat) {
+    private func configureProgress(progress: CGFloat) {
         
         let oldWidth = progressLayer.bounds.width
         let newWidth = progress * bounds.width
         let progressAnimation = CABasicAnimation(keyPath: "bounds.size.width")
-        progressAnimation.duration = 3.0
+        progressAnimation.duration = 1.0
         progressAnimation.fromValue = oldWidth
         progressAnimation.toValue = newWidth
         progressLayer.bounds = CGRect(origin: bounds.origin, size: CGSize(width: newWidth, height: bounds.height))
         progressLayer.add(progressAnimation, forKey: "anim")
      
+    }
+    
+    func configureEvent(event: WellnessEvent) {
+        
+        self.configureProgress(progress: event.progress)
+        
     }
     
     

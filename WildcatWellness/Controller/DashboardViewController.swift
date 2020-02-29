@@ -16,8 +16,14 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let record = WellnessRecord(steps: 4000, water: 3, sleep: 6.5, chapel: 24, socialEvents: 1, socialGoals: 4)
+        let controlRecord = WellnessRecord(steps: 10000, water: 8, sleep: 9, chapel: 35, socialEvents: 4, socialGoals: 10)
+        let viewModel = WellnessViewModel(record: record, controlData: controlRecord)
+        dashboardView.configureWellnessData(data: viewModel)
     }
     
     override func loadView() {
@@ -29,7 +35,6 @@ class DashboardViewController: UIViewController {
     let dashboardView = DashboardView()
     
     //MARK: Methods
-    
 
 
 }

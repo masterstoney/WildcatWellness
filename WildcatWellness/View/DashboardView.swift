@@ -27,6 +27,8 @@ class DashboardView: UIView {
     private var barSummaryView: BarSummaryView = {
         let view = BarSummaryView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = 15.0
+        view.layer.masksToBounds = true
         return view
     }()
     
@@ -43,6 +45,11 @@ class DashboardView: UIView {
         barSummaryView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.4).isActive = true
         
     }
+    
+    func configureWellnessData(data: WellnessViewModel) {
+        barSummaryView.summarySetup(data: data)
+    }
+    
     
 
 }

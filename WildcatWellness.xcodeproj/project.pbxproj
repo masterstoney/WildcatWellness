@@ -20,6 +20,9 @@
 		D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD7240A194100DC9F5D /* DashboardView.swift */; };
 		D281EFDA240A19CC00DC9F5D /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD9240A19CC00DC9F5D /* BarView.swift */; };
 		D281EFDC240AAB2000DC9F5D /* BarSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */; };
+		D281EFDE240AB00300DC9F5D /* WellnessRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFDD240AB00300DC9F5D /* WellnessRecord.swift */; };
+		D281EFE0240AB1B300DC9F5D /* WellnessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFDF240AB1B300DC9F5D /* WellnessViewModel.swift */; };
+		D281EFE2240AB39000DC9F5D /* WellnessEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFE1240AB39000DC9F5D /* WellnessEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		D281EFD7240A194100DC9F5D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		D281EFD9240A19CC00DC9F5D /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarSummaryView.swift; sourceTree = "<group>"; };
+		D281EFDD240AB00300DC9F5D /* WellnessRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessRecord.swift; sourceTree = "<group>"; };
+		D281EFDF240AB1B300DC9F5D /* WellnessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessViewModel.swift; sourceTree = "<group>"; };
+		D281EFE1240AB39000DC9F5D /* WellnessEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,9 @@
 		D281EFD4240A0E6D00DC9F5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D281EFDD240AB00300DC9F5D /* WellnessRecord.swift */,
+				D281EFE1240AB39000DC9F5D /* WellnessEvent.swift */,
+				D281EFDF240AB1B300DC9F5D /* WellnessViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D281EFE2240AB39000DC9F5D /* WellnessEvent.swift in Sources */,
 				D281EFDA240A19CC00DC9F5D /* BarView.swift in Sources */,
 				D281EFA4240A0DE400DC9F5D /* TabViewController.swift in Sources */,
 				D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */,
@@ -305,7 +315,9 @@
 				D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */,
 				D281EFDC240AAB2000DC9F5D /* BarSummaryView.swift in Sources */,
 				D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */,
+				D281EFDE240AB00300DC9F5D /* WellnessRecord.swift in Sources */,
 				D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */,
+				D281EFE0240AB1B300DC9F5D /* WellnessViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

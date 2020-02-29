@@ -56,4 +56,16 @@ class BarSummaryView: UIView {
         
     }
 
+    func summarySetup(data: WellnessViewModel) {
+        
+        stepsBar.configureEvent(event: data.getStepsProgress())
+        waterBar.configureEvent(event: data.getWaterProgress())
+        sleepBar.configureEvent(event: data.getSleepProgress())
+        chapelBar.configureEvent(event: data.getChapelProgress())
+        eventsBar.configureEvent(event: data.getEventProgress())
+        socialGoalsBar.configureEvent(event: data.getSocialProgress())
+         
+    }
+    
+    
 }
