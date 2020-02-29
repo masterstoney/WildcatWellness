@@ -17,6 +17,8 @@
 		D281EFBA240A0DE600DC9F5D /* WildcatWellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFB9240A0DE600DC9F5D /* WildcatWellnessTests.swift */; };
 		D281EFC5240A0DE600DC9F5D /* WildcatWellnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */; };
 		D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */; };
+		D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD7240A194100DC9F5D /* DashboardView.swift */; };
+		D281EFDA240A19CC00DC9F5D /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD9240A19CC00DC9F5D /* BarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildcatWellnessUITests.swift; sourceTree = "<group>"; };
 		D281EFC6240A0DE600DC9F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D281EFD7240A194100DC9F5D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		D281EFD9240A19CC00DC9F5D /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 		D281EFD3240A0E6700DC9F5D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D281EFD7240A194100DC9F5D /* DashboardView.swift */,
+				D281EFD9240A19CC00DC9F5D /* BarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D281EFDA240A19CC00DC9F5D /* BarView.swift in Sources */,
 				D281EFA4240A0DE400DC9F5D /* TabViewController.swift in Sources */,
+				D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */,
 				D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */,
 				D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */,
 				D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */,
