@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EF9F240A0DE400DC9F5D /* AppDelegate.swift */; };
 		D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA1240A0DE400DC9F5D /* SceneDelegate.swift */; };
-		D281EFA4240A0DE400DC9F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA3240A0DE400DC9F5D /* ViewController.swift */; };
+		D281EFA4240A0DE400DC9F5D /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA3240A0DE400DC9F5D /* TabViewController.swift */; };
 		D281EFA7240A0DE400DC9F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D281EFA5240A0DE400DC9F5D /* Main.storyboard */; };
 		D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D281EFA8240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld */; };
 		D281EFAC240A0DE600DC9F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D281EFAB240A0DE600DC9F5D /* Assets.xcassets */; };
 		D281EFAF240A0DE600DC9F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D281EFAD240A0DE600DC9F5D /* LaunchScreen.storyboard */; };
 		D281EFBA240A0DE600DC9F5D /* WildcatWellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFB9240A0DE600DC9F5D /* WildcatWellnessTests.swift */; };
 		D281EFC5240A0DE600DC9F5D /* WildcatWellnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */; };
+		D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		D281EF9C240A0DE400DC9F5D /* WildcatWellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildcatWellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D281EF9F240A0DE400DC9F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D281EFA1240A0DE400DC9F5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D281EFA3240A0DE400DC9F5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D281EFA3240A0DE400DC9F5D /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		D281EFA6240A0DE400DC9F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D281EFA9240A0DE400DC9F5D /* WildcatWellness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WildcatWellness.xcdatamodel; sourceTree = "<group>"; };
 		D281EFAB240A0DE600DC9F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		D281EFC0240A0DE600DC9F5D /* WildcatWellnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildcatWellnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D281EFC4240A0DE600DC9F5D /* WildcatWellnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildcatWellnessUITests.swift; sourceTree = "<group>"; };
 		D281EFC6240A0DE600DC9F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,9 @@
 			children = (
 				D281EF9F240A0DE400DC9F5D /* AppDelegate.swift */,
 				D281EFA1240A0DE400DC9F5D /* SceneDelegate.swift */,
-				D281EFA3240A0DE400DC9F5D /* ViewController.swift */,
+				D281EFD4240A0E6D00DC9F5D /* Model */,
+				D281EFD3240A0E6700DC9F5D /* View */,
+				D281EFD2240A0E5C00DC9F5D /* Controller */,
 				D281EFA5240A0DE400DC9F5D /* Main.storyboard */,
 				D281EFAB240A0DE600DC9F5D /* Assets.xcassets */,
 				D281EFAD240A0DE600DC9F5D /* LaunchScreen.storyboard */,
@@ -129,6 +133,29 @@
 				D281EFC6240A0DE600DC9F5D /* Info.plist */,
 			);
 			path = WildcatWellnessUITests;
+			sourceTree = "<group>";
+		};
+		D281EFD2240A0E5C00DC9F5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D281EFA3240A0DE400DC9F5D /* TabViewController.swift */,
+				D281EFD5240A0F1B00DC9F5D /* DashboardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D281EFD3240A0E6700DC9F5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D281EFD4240A0E6D00DC9F5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D281EFA4240A0DE400DC9F5D /* ViewController.swift in Sources */,
+				D281EFA4240A0DE400DC9F5D /* TabViewController.swift in Sources */,
 				D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */,
+				D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */,
 				D281EFA0240A0DE400DC9F5D /* AppDelegate.swift in Sources */,
 				D281EFA2240A0DE400DC9F5D /* SceneDelegate.swift in Sources */,
 			);
