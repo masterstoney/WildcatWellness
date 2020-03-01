@@ -18,7 +18,7 @@ class CategoryDataSource: NSObject, UICollectionViewDataSource {
     
     //MARK: Properties
     
-    private var data: [CategoryModel]
+    var data: [CategoryModel]
     
     //MARK: Methods
     
@@ -31,8 +31,6 @@ class CategoryDataSource: NSObject, UICollectionViewDataSource {
         cell.configureCell(category: data[indexPath.item])
         return cell
     }
-    
-    
     
     
 }

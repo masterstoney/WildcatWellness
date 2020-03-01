@@ -21,6 +21,10 @@ class DetailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+
+    }
+    
     //MARK: Properties
     
     private var iconimageView: UIImageView = {
@@ -52,6 +56,14 @@ class DetailView: UIView {
         return stackView
     }()
     
+    private lazy var averagesView: AverageDetailView = {
+        let info = StatisticInformation(name: "Water", barProgressColor: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), barBackgroundColor: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), messages: ["good":"Water is working"])
+        let view = AverageDetailView(statInfo: info)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    
     //MARK: Methods
     
     private func setupView() {
@@ -60,6 +72,7 @@ class DetailView: UIView {
         addSubview(iconimageView)
         addSubview(titleLabel)
         addSubview(stackView)
+        
         
         iconimageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         iconimageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
@@ -74,6 +87,12 @@ class DetailView: UIView {
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         stackView.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        
+        addSubview(averagesView)
+        averagesView.topAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
+        averagesView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        averagesView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        averagesView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
     }
     

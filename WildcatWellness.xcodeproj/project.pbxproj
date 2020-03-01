@@ -32,6 +32,8 @@
 		D281EFF0240B06DE00DC9F5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFEF240B06DE00DC9F5D /* DetailViewController.swift */; };
 		D281EFF2240B097B00DC9F5D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFF1240B097B00DC9F5D /* DetailView.swift */; };
 		D281EFF4240B0BDA00DC9F5D /* WellnessStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFF3240B0BDA00DC9F5D /* WellnessStatisticView.swift */; };
+		D281EFF6240B1C0600DC9F5D /* AverageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFF5240B1C0600DC9F5D /* AverageDetailView.swift */; };
+		D281EFF8240B227B00DC9F5D /* StatisticInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281EFF7240B227B00DC9F5D /* StatisticInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		D281EFEF240B06DE00DC9F5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D281EFF1240B097B00DC9F5D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D281EFF3240B0BDA00DC9F5D /* WellnessStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessStatisticView.swift; sourceTree = "<group>"; };
+		D281EFF5240B1C0600DC9F5D /* AverageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageDetailView.swift; sourceTree = "<group>"; };
+		D281EFF7240B227B00DC9F5D /* StatisticInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				D281EFD7240A194100DC9F5D /* DashboardView.swift */,
 				D281EFE5240AC1A000DC9F5D /* CategoryView.swift */,
 				D281EFF1240B097B00DC9F5D /* DetailView.swift */,
+				D281EFF5240B1C0600DC9F5D /* AverageDetailView.swift */,
 				D281EFF3240B0BDA00DC9F5D /* WellnessStatisticView.swift */,
 				D281EFE7240AC40900DC9F5D /* CategoryCollectionViewCell.swift */,
 				D281EFDB240AAB2000DC9F5D /* BarSummaryView.swift */,
@@ -195,6 +200,7 @@
 			children = (
 				D281EFE9240AC7EC00DC9F5D /* CategoryDataSource.swift */,
 				D281EFEB240AC87A00DC9F5D /* CategoryModel.swift */,
+				D281EFF7240B227B00DC9F5D /* StatisticInformation.swift */,
 				D281EFED240ACA1600DC9F5D /* CategoryDataManager.swift */,
 				D281EFDD240AB00300DC9F5D /* WellnessRecord.swift */,
 				D281EFE1240AB39000DC9F5D /* WellnessEvent.swift */,
@@ -335,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D281EFE2240AB39000DC9F5D /* WellnessEvent.swift in Sources */,
+				D281EFF8240B227B00DC9F5D /* StatisticInformation.swift in Sources */,
 				D281EFDA240A19CC00DC9F5D /* BarView.swift in Sources */,
 				D281EFA4240A0DE400DC9F5D /* TabViewController.swift in Sources */,
 				D281EFD8240A194100DC9F5D /* DashboardView.swift in Sources */,
@@ -344,6 +351,7 @@
 				D281EFE6240AC1A000DC9F5D /* CategoryView.swift in Sources */,
 				D281EFAA240A0DE400DC9F5D /* WildcatWellness.xcdatamodeld in Sources */,
 				D281EFD6240A0F1B00DC9F5D /* DashboardViewController.swift in Sources */,
+				D281EFF6240B1C0600DC9F5D /* AverageDetailView.swift in Sources */,
 				D281EFF0240B06DE00DC9F5D /* DetailViewController.swift in Sources */,
 				D281EFEA240AC7EC00DC9F5D /* CategoryDataSource.swift in Sources */,
 				D281EFDC240AAB2000DC9F5D /* BarSummaryView.swift in Sources */,

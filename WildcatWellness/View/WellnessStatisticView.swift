@@ -46,7 +46,7 @@ class WellnessStatisticView: UIView {
     private var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.preferredFont(forTextStyle: .title2).withSize(22)
+        label.font = UIFont.preferredFont(forTextStyle: .caption1).withSize(20)
         label.textColor = .label
         label.text = "Title"
         return label
@@ -55,7 +55,7 @@ class WellnessStatisticView: UIView {
     private var valueLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.preferredFont(forTextStyle: .title2).withSize(22)
+        label.font = UIFont.preferredFont(forTextStyle: .caption1).withSize(20)
         label.textColor = .label
         label.textAlignment = .right
         label.text = "Value"
@@ -91,8 +91,8 @@ class WellnessStatisticView: UIView {
         
         iconImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
         iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        iconImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        iconImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 25).isActive = true
         
         if !propertyEditor {
             iconImageView.isHidden = true

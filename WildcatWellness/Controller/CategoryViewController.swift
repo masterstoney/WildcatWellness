@@ -32,7 +32,12 @@ class CategoryViewController: UIViewController, UICollectionViewDelegateFlowLayo
     
     //MARK: Methods
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let presentedController = DetailViewController()
+        navigationController?.pushViewController(presentedController, animated: true)
+        
+    }
     
 
 
