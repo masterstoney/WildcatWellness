@@ -59,7 +59,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     private func setupView() {
         
         gradientLayer.frame = self.bounds
-        layer.addSublayer(gradientLayer)
+       // layer.addSublayer(gradientLayer)
         
         
         addSubview(titleLabel)
@@ -92,7 +92,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         titleLabel.text = category.title
         descriptionLabel.text = category.description
         artworkImageView.image = category.artwork
-        gradientLayer.colors = [category.leadingGradientColor.cgColor,category.trailingGradientColor.cgColor]
+        backgroundColor = category.trailingGradientColor
    
     }
     

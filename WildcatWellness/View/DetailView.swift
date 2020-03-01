@@ -45,8 +45,8 @@ class DetailView: UIView {
         return label
     }()
     
-    private var currentStatisticView: WellnessStatisticView = WellnessStatisticView(propertyEditor: false)
-    private var goalStatisticView: WellnessStatisticView = WellnessStatisticView(propertyEditor: true)
+    private var currentStatisticView: WellnessStatisticView = WellnessStatisticView(propertyEditor: false, title: "Current")
+    private var goalStatisticView: WellnessStatisticView = WellnessStatisticView(propertyEditor: true, title: "Goal")
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [currentStatisticView,goalStatisticView])
@@ -96,6 +96,27 @@ class DetailView: UIView {
         
     }
     
-    
+    func configurreViewData(details: DetailedViewInformation) {
+        
+        iconimageView.image = details.categoryModel.artwork
+        titleLabel.text = details.categoryModel.title
+        backgroundColor = details.categoryModel.trailingGradientColor
+        averagesView = AverageDetailView(statInfo: details.statisticInformation)
+        
+        if details.categoryModel.title == "Steps" {
+            let wellnessManager = WellnessDataManager()
+            wellnessManager.getTodaysSteps { (steps) in
+                DispatchQueue.main.async {
+                    self.currentStatisticView.setStatValue(value: Float(steps))
+                }
+            }
+        } else {
+            currentStatisticView.setStatValue(value: details.categoryModel.currentStat)
+        }
+        goalStatisticView.setStatValue(value: details.categoryModel.goalStat)
+        
+        
+        
+    }
 
 }

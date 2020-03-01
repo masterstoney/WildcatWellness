@@ -21,10 +21,11 @@ class BarView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(backgroundColor: UIColor, progressColor: UIColor) {
+    convenience init(backgroundColor: UIColor, progressColor: UIColor, icon: UIImage = UIImage()) {
         self.init()
         backgroundLayer.backgroundColor = backgroundColor.cgColor
         progressLayer.backgroundColor = progressColor.cgColor
+        iconImageView.image = icon
     }
     
     override func layoutSubviews() {
@@ -53,6 +54,13 @@ class BarView: UIView {
         return layer
     }()
     
+    private var iconImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     //MARK: Methods
     
     private func setupView() {
@@ -62,6 +70,12 @@ class BarView: UIView {
         self.layer.addSublayer(backgroundLayer)
         progressLayer.anchorPoint = CGPoint(x: 0, y: 0.0)
         self.layer.addSublayer(progressLayer)
+        
+        addSubview(iconImageView)
+        iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        iconImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
         
     }
     

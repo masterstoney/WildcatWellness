@@ -20,9 +20,10 @@ class WellnessStatisticView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(propertyEditor: Bool) {
+    convenience init(propertyEditor: Bool, title: String) {
         self.init()
         self.propertyEditor = propertyEditor
+        self.titleLabel.text = title
         setupView()
     }
     
@@ -67,6 +68,7 @@ class WellnessStatisticView: UIView {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(systemName: "chevron.right")
         imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = .secondaryLabel
         return imageView
     }()
     
@@ -78,7 +80,7 @@ class WellnessStatisticView: UIView {
         addSubview(valueLabel)
         addSubview(iconImageView)
         
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = .clear
         titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: centerXAnchor).isActive = true
@@ -101,5 +103,8 @@ class WellnessStatisticView: UIView {
         
     }
     
+    func setStatValue(value: Float) {
+        valueLabel.text = "\(value)"
+    }
 
 }

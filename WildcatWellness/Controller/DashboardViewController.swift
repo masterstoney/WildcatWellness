@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuickLook
 
 class DashboardViewController: UIViewController {
 
@@ -16,14 +17,25 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let wellnessData = WellnessDataManager()
+        wellnessData.getTodaysSteps { (steps) in
+            print(steps)
+        }
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let record = WellnessRecord(steps: 4000, water: 3, sleep: 6.5, chapel: 24, socialEvents: 1, socialGoals: 4)
-        let controlRecord = WellnessRecord(steps: 10000, water: 8, sleep: 9, chapel: 35, socialEvents: 4, socialGoals: 10)
-        let viewModel = WellnessViewModel(record: record, controlData: controlRecord)
-        dashboardView.configureWellnessData(data: viewModel)
+        let healthManager = WellnessDataManager()
+        healthManager.getTodaysSteps { (steps) in
+            DispatchQueue.main.async {
+                let record = WellnessRecord(steps: Float(steps), water: 5, sleep: 6, chapel: 7, socialEvents: 2, socialGoals: 3)
+                let controlRecord = WellnessRecord(steps: 10000, water: 8, sleep: 8, chapel: 10, socialEvents: 4, socialGoals: 5)
+                let viewModel = WellnessViewModel(record: record, controlData: controlRecord)
+                self.dashboardView.configureWellnessData(data: viewModel)
+            }
+
+        }
+
     }
     
     override func loadView() {
@@ -36,4 +48,11 @@ class DashboardViewController: UIViewController {
     
     //MARK: Methods
 
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        let presentedController = ARExerciseViewController()
+        navigationController?.pushViewController(presentedController, animated: true)
+    }
+    
 }
+

@@ -16,7 +16,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        detailView.configurreViewData(details: detailedViewInformation!)
     }
+    
     
     override func loadView() {
         self.view = detailView
@@ -25,6 +27,7 @@ class DetailViewController: UIViewController {
     //MARK: Properties
   
     private var detailView: DetailView = DetailView()
+    var detailedViewInformation: DetailedViewInformation?
     
     //MARK: Methods
     

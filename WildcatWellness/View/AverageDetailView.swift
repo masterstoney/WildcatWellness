@@ -43,6 +43,7 @@ class AverageDetailView: UIView {
         let segmentedControl = UISegmentedControl(items: ["Daily","Weekly","Monthly"])
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         return segmentedControl
     }()
     
@@ -54,7 +55,7 @@ class AverageDetailView: UIView {
         label.font = UIFont.preferredFont(forTextStyle: .body).withSize(18)
         label.textColor = .secondaryLabel
         label.numberOfLines = 2
-        label.text = "This is how good we have been performing over the past couple of"
+        label.text = "Not enough data to perform calculation 😞"
         return label
     }()
     
@@ -85,6 +86,7 @@ class AverageDetailView: UIView {
         barView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
         barView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 10).isActive = true
         barView.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        barView.layer.cornerRadius = 10
         
         explanationLabel.topAnchor.constraint(equalTo: barView.bottomAnchor, constant: 10).isActive = true
         explanationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true

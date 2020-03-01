@@ -30,12 +30,20 @@ class CategoryViewController: UIViewController, UICollectionViewDelegateFlowLayo
     private var categoryView: CategoryView = CategoryView()
     var dataSource: CategoryDataSource?
     
+    
     //MARK: Methods
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let presentedController = DetailViewController()
-        navigationController?.pushViewController(presentedController, animated: true)
+        let arView: Bool = dataSource!.data[indexPath.item].arView
+        if (arView) {
+            let presentedController = ARExerciseViewController()
+            navigationController?.pushViewController(presentedController, animated: true)
+        } else {
+            let presentedController = DetailViewController()
+            presentedController.detailedViewInformation = DetailedViewInformation(categoryModel: dataSource!.data[indexPath.item])
+            navigationController?.pushViewController(presentedController, animated: true)
+        }
         
     }
     
