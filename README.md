@@ -7,6 +7,10 @@ This project was done for a weekend Hackathon in college. The theme of the hacka
 
 ## Screenshots
 
+![Dark mode screenshot of dashboard](Screenshots/darkModeDashboard.png)
+![Light mode screenshot of dashboard](Screenshots/lightModeDashboard.png)
+![Physical category view screenshot on dark mode](Screenshots/IMG_7275.PNG)
+![Water detailed view screenshot](Screenshots/IMG_7276.PNG)
 
 
 ## Architecture
