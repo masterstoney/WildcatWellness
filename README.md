@@ -7,11 +7,12 @@ This project was done for a weekend Hackathon in college. The theme of the hacka
 
 ## Screenshots
 
-![Dark mode screenshot of dashboard](Screenshots/darkModeDashboard.png = 812x375)
-![Light mode screenshot of dashboard](Screenshots/lightModeDashboard.png)
-![Physical category view screenshot on dark mode](Screenshots/IMG_7275.PNG)
-![Water detailed view screenshot](Screenshots/IMG_7276.PNG)
-
+<p align="center">
+  <img src="Screenshots/IMG_7277.PNG" alt="Dashboard screenshot in dark mode" width="375" height="812">
+  <img src="Screenshots/IMG_7278.PNG" alt="Dashboard screenshot in light mode" width="375" height="812">
+  <img src="Screenshots/IMG_7275.PNG" alt="Physical category view in light mode" width="375" height="812">
+  <img src="Screenshots/IMG_7276.PNG" alt="Water detailed view" width="375" height="812">
+</p>
 
 ## Architecture
 
