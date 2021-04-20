@@ -55,9 +55,7 @@ class WellnessDataManager {
     
     
     func enableHealthKit() {
-        var shareTypes = Set<HKSampleType>()
-       
-
+        let shareTypes = Set<HKSampleType>()
         var readTypes = Set<HKObjectType>()
         readTypes.insert(HKQuantityType.quantityType(forIdentifier: .stepCount)!)
 

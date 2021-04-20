@@ -48,7 +48,7 @@ class BarView: UIView {
         let layer = CALayer()
         layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner]
         layer.cornerRadius = 10.0
-        layer.shadowColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8470588235)
         layer.shadowRadius = 5.0
         layer.shadowOpacity = 0.8
         return layer
